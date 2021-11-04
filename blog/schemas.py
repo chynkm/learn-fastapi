@@ -35,3 +35,8 @@ class ShowBlog(BaseModel):
     # for DB data retrieval
     class Config():
         orm_mode = True
+
+
+class Login(BaseModel):
+    username: str
+    password: str
